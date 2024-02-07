@@ -1,10 +1,13 @@
 import { useState } from "react";
 import Header from "../Header";
 
-import doctorclipart from "./kisspng-physician-medicine-health-care-general-practitione-5ce67ea99bc7f7.1567409215586095776381.jpg"
-import patientclipart from "./1430453.png"
-import bedclipart from "./il_570xN.2458323844_iqhw.avif"
-import AddDoctor from "./addDoctor";
+import doctorclipart from "./doctor.png"
+import patientclipart from "./examination.png"
+import bedclipart from "./hospital-bed.png"
+import receiptClipart from "./receipt.png"
+import appointClipart from "./medical-appointment.png"
+import paymentClipart from "./payment-method.png"
+
 
 function Admin ()
 {
@@ -29,7 +32,7 @@ function Admin ()
           <a className="nav-link active" aria-current="page" href="#">Dashboard</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link"  element={<AddDoctor/>}>Add Doctor</a>
+          <a className="nav-link"   href="/admin/addDoctor">Add Doctor</a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#">Edit Doctor</a>
@@ -75,31 +78,31 @@ function Admin ()
         <tbody>
             <tr>
                 <td>
-<img src={doctorclipart} style={{height:"200px", width:"150px"}}/>
+<img src={doctorclipart} style={{height:"160px", width:"150px", marginBottom:"20px"}}/>
 
 <figcaption><h5>Doctor Count: </h5></figcaption>
                 </td>
                 <td>  
-                <img src={patientclipart} style={{height:"200px", width:"150px"}}/>
+                <img src={patientclipart} style={{height:"160px", width:"150px", }}/>
 <figcaption>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h5>Patient Count: </h5> </figcaption>
                 </td>
                 <td>  
-                <img src={bedclipart} style={{height:"200px", width:"150px"}}/>
+                <img src={bedclipart} style={{height:"170px", width:"150px"}}/>
 <figcaption>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h5 >Bed Count: </h5> </figcaption>
                 </td>
             </tr>
             <tr>
             <td>  
-                <img src={bedclipart} style={{height:"200px", width:"150px"}}/>
-<figcaption>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h5 >Bed Count: </h5> </figcaption>
+                <img src={appointClipart} style={{height:"170px", width:"150px"}}/>
+<figcaption>&nbsp;&nbsp;&nbsp;<h5 >Todays Appointment</h5> </figcaption>
                 </td>
                 <td>  
-                <img src={bedclipart} style={{height:"200px", width:"150px"}}/>
-<figcaption>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h5 >Bed Count: </h5> </figcaption>
+                <img src={receiptClipart} style={{height:"175px", width:"150px"}}/>
+<figcaption>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h5 >Receptionist Count: </h5> </figcaption>
                 </td>
                 <td>  
-                <img src={bedclipart} style={{height:"200px", width:"150px"}}/>
-<figcaption>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h5 >Bed Count: </h5> </figcaption>
+                <img src={paymentClipart} style={{height:"160px", width:"150px"}}/>
+<figcaption>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h5 >Todays Transcation </h5> </figcaption>
                 </td>
 
             </tr>

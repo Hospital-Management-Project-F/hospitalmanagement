@@ -9,6 +9,7 @@ import './App.css';
 
 
 import SignIn from './pages/signIn';
+import AddDoctor from './component/Admin/addDoctor';
 
 
 function App() {
@@ -22,6 +23,8 @@ function App() {
   <Route path='/' element={<SignIn/>}/>
 
   <Route path='/admin' element={<Admin/>}/>
+
+  <Route path='/admin/addDoctor' element={<AddDoctor/>}/>
   
 
 
