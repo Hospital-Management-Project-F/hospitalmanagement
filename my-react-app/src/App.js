@@ -3,6 +3,7 @@ import { Route,Routes } from 'react-router-dom';
 
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 
+import Admin from './component/Admin/admin';
 
 import './App.css';
 
@@ -19,6 +20,8 @@ function App() {
   <Routes>
 
   <Route path='/' element={<SignIn/>}/>
+
+  <Route path='/admin' element={<Admin/>}/>
   
 
 

@@ -1,13 +1,15 @@
+
+
+
 import { useEffect, useState } from "react";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import { useNavigate } from "react-router-dom";
 import { Button } from "bootstrap";
 
-import corosoleImage from './17036796453702.jpeg';
-import secondImage from './360_F_124928348_gmLHtItkKNtTTHiNVN2Fz2WjinAZF1jl.jpg';
-import thirdImage from './1aacccd507c773c0c880df7562bcc6df.jpg';
+import corosoleImage from './img2.jpg';
 
-// import "./signIn.css";
+import thirdImage from './img3.jpg';
+
 
 
 const SignIn = () => {
@@ -135,9 +137,9 @@ const SignIn = () => {
 </div>
 <div id="carouselExampleRide" className="carousel slide" data-bs-ride="true">
   <div className="carousel-inner">
-    <div className="carousel-item active">
+    {/* <div className="carousel-item active">
       <img src={secondImage} className="d-block -50" alt="..."/>
-    </div>
+    </div> */}
     <div className="carousel-item active">
       <img src={corosoleImage} className="d-block w-50" alt="..."/>
     </div>
