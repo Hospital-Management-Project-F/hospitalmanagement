@@ -4,6 +4,7 @@ import Header from "../Header";
 import doctorclipart from "./kisspng-physician-medicine-health-care-general-practitione-5ce67ea99bc7f7.1567409215586095776381.jpg"
 import patientclipart from "./1430453.png"
 import bedclipart from "./il_570xN.2458323844_iqhw.avif"
+import AddDoctor from "./addDoctor";
 
 function Admin ()
 {
