@@ -1,0 +1,25 @@
+package com.app.entities;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Entity
+@Table(name="users")
+@Getter
+@Setter
+public class User extends BaseEntity{
+	private String first_name;
+	private String last_name;
+	private String email;
+	private String password;
+	private String role;
+	private String mobile;
+	private String security_que;
+	private String security_ans;
+	
+	
+	
+}

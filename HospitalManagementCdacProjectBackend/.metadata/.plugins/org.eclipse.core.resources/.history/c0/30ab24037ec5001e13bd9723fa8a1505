@@ -1,0 +1,17 @@
+package com.app.entities;
+
+public enum WardType {
+
+	    GENERAL,
+	    ICU,
+	    CARDIOLOGY,
+	    ONCOLOGY,
+	    PEDIATRICS,
+	    SURGERY,
+	    PSYCHIATRY,
+	    ORTHOPEDICS,
+	    NEUROLOGY
+	}
+
+
+

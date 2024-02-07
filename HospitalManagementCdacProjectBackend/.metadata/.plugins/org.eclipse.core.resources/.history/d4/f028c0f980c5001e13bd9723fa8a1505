@@ -1,0 +1,5 @@
+package com.app.daos;
+
+public class IUserDao extends JpaRepository<Employee, Long>{
+
+}
