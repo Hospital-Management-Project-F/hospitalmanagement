@@ -1,0 +1,5 @@
+package com.app.entities;
+
+public enum BloodType {
+ A_neg,A_pos,B_neg,B_pos, O_pos, O_neg, AB_pos, Ab_neg 
+}

@@ -1,0 +1,10 @@
+package com.app.dtos;
+@Data
+public class AppointmentDto {
+	
+	private int visitId;
+	private int patientId;
+	private int doctorId;
+	private int visits;
+
+}

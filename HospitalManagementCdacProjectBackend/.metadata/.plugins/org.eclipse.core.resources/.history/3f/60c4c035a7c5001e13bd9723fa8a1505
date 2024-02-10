@@ -1,0 +1,82 @@
+package com.app.entities;
+
+import java.sql.Timestamp;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Entity
+@Table(name="doctors")
+@Getter
+@Setter
+@AllArgsConstructor
+public class Doctor extends BaseEntity{
+
+	@OneToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name ="emp_id" )
+	private Employee employee;
+	
+	private String specialisation;
+	private double charges;
+	
+	@OneToMany(mappedBy = "doctor",cascade = CascadeType.PERSIST)
+	private List<Patient> patients;
+	
+	@OneToMany(mappedBy = "doctor",cascade = CascadeType.PERSIST)
+	private List<Appointment> visits;
+	
+	
+	public Doctor() {
+		patients=new ArrayList<Patient>();
+	}
+	
+	
+	public void addPatient(Patient patient) {
+		patient.setDoctor(this);
+		this.patients.add(patient);
+	}
+	//adding visit to doctor visit
+	public void addVisit(Appointment visit) {
+		visit.setDoctor(this);
+		this.visits.add(visit);
+	}
+	/////***********************connecting foreign key 
+	public void addEmployee(Employee e) {
+		this.employee=e;
+		this.employee.setDoctor(this);
+		
+	}
+
+	public Doctor(long id, double charges) {
+		super();
+		this.id = id;
+		this.charges = charges;
+	}
+
+
+	public Long getId() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+	
+
+	
+	
+	
+
+
+}
