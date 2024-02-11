@@ -1,0 +1,12 @@
+package com.app.entities;
+
+import javax.persistence.Column;
+
+@Entity
+public class Employees extends BaseEntity{
+	@Column(length = 50)
+	private String firstName;
+	@Column(length = 50)
+	private String lastName;
+
+}

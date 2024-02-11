@@ -1,0 +1,13 @@
+package com.app.dtos;
+
+import lombok.Data;
+
+@Data
+public class AppointmentDto {
+	
+	private long visitId;
+	private long patientId;
+	private int doctorId;
+	private int visits;
+
+}

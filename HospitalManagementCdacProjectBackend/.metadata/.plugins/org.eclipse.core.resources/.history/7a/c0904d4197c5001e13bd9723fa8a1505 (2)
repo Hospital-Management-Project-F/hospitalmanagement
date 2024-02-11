@@ -1,0 +1,15 @@
+package com.app.daos;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.app.entities.Appointment;
+import com.app.entities.Medicine;
+
+public interface IMedicineDao extends JpaRepository<Medicine, Long>{
+	@Modifying
+	@Query(value = "insert into medicines values (:id, :name, :price)",nativeQuery = true)
+	int insertIntoMedicineTable( @Param("id")int id,@Param("name")String name,@Param("price")double price);
+	
+	
+	
+}

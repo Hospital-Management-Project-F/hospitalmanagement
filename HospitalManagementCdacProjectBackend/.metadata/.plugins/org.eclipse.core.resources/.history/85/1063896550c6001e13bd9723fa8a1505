@@ -1,0 +1,14 @@
+package com.app.services;
+
+import java.util.List;
+
+import com.app.dtos.DoctorDto;
+
+public class DoctorServices {
+
+	public List<DoctorDto> getAllDoctors() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

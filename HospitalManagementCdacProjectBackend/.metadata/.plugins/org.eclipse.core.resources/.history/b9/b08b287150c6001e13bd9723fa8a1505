@@ -1,0 +1,38 @@
+package com.app.services;
+
+import java.util.List;
+
+import com.app.dtos.DoctorDto;
+
+
+	@Service 
+	@Transactional
+	public class DoctorServices {
+		@Autowired
+		IUserDao userDao;
+		@Autowired
+		IEmployeeDao employeeDao;
+		@Autowired
+		IDoctorDao doctorDao;
+		@Autowired
+		IPatientDao patientDao;
+		
+		public List<DoctorDataBackinBean> getAllDoctors() {
+			List<Doctor> doctors=doctorDao.findAll();
+			List<DoctorDataBackinBean> doctorDetail=createDoctorsList(doctors);
+			
+			return doctorDetail;
+			
+		}
+
+		public void updatePatientDetails(PatientDataBacking patientData) throws NoSuchPatientFoundException  {
+			int updateCount;
+			if(patientDao.existsById(patientData.getPatId()))
+			 updateCount=patientDao.updatePatientPrescription(patientData.getPrescription(),patientData.getPatId());
+			else
+			throw new NoSuchPatientFoundException("patient  with id "+patientData.getPatId()+" does not exists");
+		}
+		
+		
+
+	}

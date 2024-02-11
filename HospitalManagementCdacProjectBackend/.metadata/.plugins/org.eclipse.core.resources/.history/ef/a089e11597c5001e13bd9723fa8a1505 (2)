@@ -1,0 +1,14 @@
+package com.app.daos;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.app.entities.Appointment;
+import com.app.entities.MedicineAssign;
+
+public interface IMedicineAssignDao extends JpaRepository<MedicineAssign, Long>{
+
+	
+	
+	
+	
+}

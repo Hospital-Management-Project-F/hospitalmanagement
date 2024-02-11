@@ -1,0 +1,5 @@
+package com.app.entities;
+
+public enum BloodType {
+ A +ve,A -,B+
+}

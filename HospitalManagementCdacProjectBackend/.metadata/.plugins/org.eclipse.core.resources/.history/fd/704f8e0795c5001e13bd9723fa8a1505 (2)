@@ -1,0 +1,17 @@
+package com.app.daos;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.app.entities.Patient;
+
+public interface IPatientDao extends JpaRepository<Patient,Integer>{
+
+	
+	
+	
+	
+	
+	
+	
+	
+}
