@@ -81,7 +81,7 @@ const [specialization, setSpecialization]= useState("");
 
     return<>
       <Header/> 
-    <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
   <div className="container-fluid">
     <a className="navbar-brand" href="#">Welcome Admin</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -90,30 +90,33 @@ const [specialization, setSpecialization]= useState("");
     <div className="collapse navbar-collapse" id="navbarText">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
       <li className="nav-item">
-          <a className="nav-link " aria-current="page" href="/admin">Dashboard</a>
+          <a className="nav-link" aria-current="page" href="#">Dashboard</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link active"  href="/admin/addDoctor">Add Doctor</a>
+          <a className="nav-link active"   href="/admin/addDoctor">Add Doctor</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Edit Doctor</a>
+          <a className="nav-link" href="/admin/showDoctors">Show All Doctor</a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#">Add Receptionist</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Edit Receptionist</a>
+          <a className="nav-link" href="#">Show Receptionist</a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#">Add Appointment</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Manage Appointment</a>
+          <a className="nav-link" href="#">Manage Appointments</a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#">Add Patient</a>
         </li>  <li className="nav-item">
-          <a className="nav-link" href="#">Manage Patient</a>
+          <a className="nav-link" href="#">Manage Patients</a>
+        </li>
+         <li className="nav-item">
+          <a className="nav-link" href="#">Manage Bed</a>
         </li>
       </ul>
      

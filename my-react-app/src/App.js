@@ -10,6 +10,7 @@ import './App.css';
 
 import SignIn from './pages/signIn';
 import AddDoctor from './component/Admin/addDoctor';
+import ShowDoctors from './component/Admin/showDoctors';
 
 
 function App() {
@@ -25,6 +26,8 @@ function App() {
   <Route path='/admin' element={<Admin/>}/>
 
   <Route path='/admin/addDoctor' element={<AddDoctor/>}/>
+
+  <Route path='/admin/showDoctors' element={<ShowDoctors/>}/>
   
 
 

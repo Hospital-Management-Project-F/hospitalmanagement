@@ -12,7 +12,7 @@ import paymentClipart from "./payment-method.png"
 function Admin ()
 {
 
-    const[doctor,setDoctor] =useState("");
+   
 
 
     return <>
@@ -35,24 +35,27 @@ function Admin ()
           <a className="nav-link"   href="/admin/addDoctor">Add Doctor</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Edit Doctor</a>
+          <a className="nav-link" href="/admin/showDoctors">Show All Doctor</a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#">Add Receptionist</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Edit Receptionist</a>
+          <a className="nav-link" href="#">Show Receptionist</a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#">Add Appointment</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Manage Appointment</a>
+          <a className="nav-link" href="#">Manage Appointments</a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#">Add Patient</a>
         </li>  <li className="nav-item">
-          <a className="nav-link" href="#">Manage Patient</a>
+          <a className="nav-link" href="#">Manage Patients</a>
+        </li>
+         <li className="nav-item">
+          <a className="nav-link" href="#">Manage Bed</a>
         </li>
       </ul>
      
